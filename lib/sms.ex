@@ -28,7 +28,7 @@ defmodule SMS do
     # Get User Telephone Number
     telnum = IO.gets("Enter your phone number: ") |> String.trim()
     # Monjo OTP Message with Generated Code
-    smscontent = "Monjo: Your Account Verification Code is #{vcode}"
+    smscontent = "APPNAME Your Account Verification Code is #{vcode}"
 
     # HTTP "POST" REQUEST
     {:ok, conn} = Mint.HTTP1.connect(:http, "#{host}", 80)
